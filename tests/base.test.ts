@@ -1,4 +1,4 @@
-import { test, assert, expect, describe } from 'vitest';
+import { test, assert, expect, describe, expectTypeOf } from 'vitest';
 import {
   add,
   containsString,
