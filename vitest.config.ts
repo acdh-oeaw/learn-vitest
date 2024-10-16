@@ -1,9 +1,12 @@
 // import tsConfigPaths from "vite-tsconfig-paths";
 import { resolve } from 'path';
 import { defineConfig } from 'vitest/config';
+import vue from '@vitejs/plugin-vue';
+import tsConfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   //plugins: [tsConfigPaths()], // Uncomment if a module cant be found,  tells vite to take tsconfig.json paths into account
+  plugins: [vue(), tsConfigPaths()],
   test: {
     include: ['./tests/**/*.test.ts'],
     //setupFiles: ['./.vitest.config/setup-vitest.ts'],
@@ -20,10 +23,10 @@ export default defineConfig({
     },
     // Configuiration for browser mode
     // If a framework like vue is used => include it the corresponding vite plugin
-    /*browser: {
+    browser: {
       provider: 'playwright',
       enabled: true,
       name: 'chromium',
-    },*/
+    },
   },
 });

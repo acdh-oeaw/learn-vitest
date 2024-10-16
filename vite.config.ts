@@ -1,7 +1,6 @@
+import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  server: {
-    open: './src/Counter.html',
-  },
+  plugins: [vue()],
 });
