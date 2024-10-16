@@ -1,10 +1,12 @@
 # Vitest
 
 Yes we test!
+A learning repository about vitest and its main features
+[Vitest](https://vitest.dev)
 
 ## Main features
 
-- Uses vite => yay
+- Uses vite
 - Use same setup from the app to resolve the tests (share between Test, Dev and Build)
 - Watch mode for tests (starts by default)
 - Support for workspace => Useful in a monorepo setting
@@ -44,6 +46,7 @@ Possible to make own serializer for snapshots
 Still experimental feature => documentation is still missing a few things and there are bugs here and there
 Allows to run tests in the browser natively
 Use Playwright/Webdriverio in addition
+[Playwright](https://playwright.dev/)
 Need to update the config to activate this feature
 Has a headless mode => Run browser in background without user interface
 Several packages provided by vitest to render components from frameworks out of the box (vue, react, svelte)
@@ -54,6 +57,8 @@ Multiple API provided out of the box:
 - Commands API
 - Interactivity API
 - Context API with utility functions for tests
+
+Link to the current documentation for browser mode: [Vitest browser mode](https://vitest.dev/guide/browser/)
 
 ## More interesting features which can be explored further
 
