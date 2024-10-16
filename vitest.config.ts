@@ -20,10 +20,10 @@ export default defineConfig({
     },
     // Configuiration for browser mode
     // If a framework like vue is used => include it the corresponding vite plugin
-    browser: {
+    /*browser: {
       provider: 'playwright',
       enabled: true,
       name: 'chromium',
-    },
+    },*/
   },
 });
